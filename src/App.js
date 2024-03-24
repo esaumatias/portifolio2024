@@ -4,7 +4,7 @@ import './App.css';
 import Home from './Pages/Home';
 
 const App = () => {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
 
   const handleThemeChange = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
