@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 import Home from './Pages/Home';
+import Skills from './Pages/Skills';
 
 const App = () => {
   const [theme, setTheme] = useState('light');
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <div className={`App ${theme}`}>
       <Home handleThemeChange={handleThemeChange} theme={theme}/>
+      <Skills />
     </div>
   );
 }

@@ -1,0 +1,55 @@
+.containerHardSkill {
+  width: 70vw;
+  margin-bottom: 100px;
+}
+
+.containerHardSkill .title {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.containerHardSkill .subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  height: 70px;
+  transition: font-weight 0.3s ease, font-size 0.3s ease, text-align 0.3s ease, height 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerTecnologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.containerTecnologies li {
+  border-radius: 12px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.containerTecnologies svg {
+  font-size: 3rem;
+  transition: 300ms;
+}
+
+@media screen and (max-width: 768px) {
+  .containerHardSkill {
+    width: 95vw;
+    margin-bottom: 100px;
+  }
+  .containerHardSkill .subtitle {
+    height: 113px;
+  }
+}
