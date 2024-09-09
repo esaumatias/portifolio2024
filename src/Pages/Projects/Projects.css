@@ -1,0 +1,32 @@
+.containerProjects {
+  width: 70vw;
+  margin-bottom: 100px;
+}
+
+.containerProjects .title {
+  font-weight: 700;
+  font-size: 48px;
+  /* text-align: center; */
+  line-height: 60px;
+}
+
+.containerProjects .containerCards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+  gap: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .containerProjects {
+    width: 95vw;
+    margin-bottom: 100px;
+  }
+
+  .containerProjects .containerCards {
+   flex-direction: column;
+  }
+
+}

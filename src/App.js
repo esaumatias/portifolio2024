@@ -4,6 +4,7 @@ import './App.css';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Skills from './Pages/Skills';
+import Projects from './Pages/Projects';
 
 const App = () => {
   const [theme, setTheme] = useState('light');
@@ -16,6 +17,7 @@ const App = () => {
     <div className={`App ${theme}`}>
       <Home handleThemeChange={handleThemeChange} theme={theme}/>
       <Skills />
+      <Projects />
       <About />
     </div>
   );
