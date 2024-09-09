@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 import Home from './Pages/Home';
+import About from './Pages/About';
 import Skills from './Pages/Skills';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
     <div className={`App ${theme}`}>
       <Home handleThemeChange={handleThemeChange} theme={theme}/>
       <Skills />
+      <About />
     </div>
   );
 }

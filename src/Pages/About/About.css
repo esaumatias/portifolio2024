@@ -1,0 +1,58 @@
+.containerAbout {
+  width: 70vw;
+  margin-bottom: 100px;
+}
+
+.containerAbout .title {
+  font-weight: 700;
+  font-size: 48px;
+  /* text-align: center; */
+  line-height: 60px;
+}
+
+.containerAbout .containerSobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 40px;
+}
+
+.containerAbout .containerSobre .containerText {
+  max-width: 600px;
+}
+
+.containerAbout .containerSobre .containerText div {
+  line-height: 23px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.containerAbout .containerSobre .perfil svg {
+  width: 250px;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .containerAbout {
+    width: 95vw;
+    margin-bottom: 100px;
+  }
+
+  .containerAbout .containerSobre {
+   flex-direction: column;
+  }
+  
+  .containerAbout .containerSobre .containerText {
+    width: 80vw;
+  }
+
+  .containerAbout .containerSobre .containerText div {
+    text-align: justify;
+  }
+
+  .containerAbout .title {
+    text-align: center;
+  }
+}

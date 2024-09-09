@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ReactSVG } from "react-svg";
 import logo from "../../Assets/logo.svg";
-import perfil from "../../Assets/perfil.svg";
+import perfil from "../../Assets/iconEsau.png";
 import linkedin from "../../Assets/linkedin.svg";
 import git from "../../Assets/Vector.svg";
 import lua from "../../Assets/lua-cheia (2).png";
@@ -103,7 +103,7 @@ const Home = ({ theme, handleThemeChange }) => {
             <div className="myName">Esau Matias</div>
             <div className="titulo-principal">Front-end developer.</div>
           </div>
-          <ReactSVG src={perfil} className="perfil" />
+          <img src={perfil} className="perfil" alt="esau perfil"/>
         </div>
 
         <div className="containerSocial">
