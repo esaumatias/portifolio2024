@@ -1,0 +1,50 @@
+.containerFooter {
+  width: 70vw;
+  height: 90px;
+  display: flex;
+  position: relative;
+  background: linear-gradient(90deg, rgba(19, 176, 245, 1) 0%, rgba(231, 15, 170, 1) 100%);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: 60px;
+}
+
+.containerFooter .containerContact {
+  width: 65vw;
+  height: 100px;
+  background-color: #e6e1e1;
+  position: absolute;
+  top: -60px;
+  border-radius: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.containerFooter .containerTextFooter {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.containerFooter .textFooter {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .containerFooter {
+    width: 100vw;
+    height: 90px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .containerFooter .containerContact {
+    width: 90vw;
+    height: 80px;
+    top: -40px;
+  }
+}

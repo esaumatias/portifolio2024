@@ -209,7 +209,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.containerHome .perfil svg {
+.containerHome .perfil {
   width: 250px;
   height: 100%;
 }
@@ -292,8 +292,8 @@
     font-size: 25px;
   }
 
-  .containerHome .perfil svg {
-    width: 250px;
+  .containerHome .perfil {
+    width: 200px;
     height: 100%;
     order: 1;
   }
