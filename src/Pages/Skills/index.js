@@ -48,7 +48,7 @@ const Skills = () => {
           initial="hidden"
           animate="visible"
         >
-          <div className="title">Hard Skills</div>
+          <div className="title" id="skills">Skills</div>
           <div className="subtitle">{text}</div>
 
           <div className="containerTecnologies">

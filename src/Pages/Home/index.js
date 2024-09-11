@@ -53,21 +53,17 @@ const Home = ({ theme, handleThemeChange }) => {
         <div className={`menu-links ${menuOpen ? "open" : ""}`}>
           <ul>
             <li>
-              <a href="#">home</a>
+              <a href="#home">home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#skills">Tech Stack</a>
             </li>
             <li>
-              <a href="#">Tech Stack</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#about">About</a>
             </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-
             <button onClick={handleThemeChange} className="buttonMode">
               <motion.div
                 animate={theme === "light" ? "sun" : "moon"}
