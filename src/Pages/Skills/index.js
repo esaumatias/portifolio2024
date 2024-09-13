@@ -6,10 +6,12 @@ import "./Skills.css";
 const Skills = () => {
   const [text, setText] = useState("minhas tecnologias");
   const [isVisible, setIsVisible] = useState(true);
+  const [moveCheck, setMoveCheck] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsVisible(window.scrollY >= 0 ? true : false);
+      setIsVisible(window.scrollY >= 50 ? true : false);
+      setMoveCheck(window.scrollY >= 50 && true);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -41,7 +43,7 @@ const Skills = () => {
 
   return (
     <>
-      {isVisible && (
+      {isVisible ? (
         <motion.div
           className="containerHardSkill"
           variants={animationListPrimaryHardSkills}
@@ -74,6 +76,10 @@ const Skills = () => {
             })}
           </div>
         </motion.div>
+      ) : (
+        <div className="containerHardSkill" style={{ height : '30vh' }}>
+           <div className="title" id="skills">Skills</div>
+        </div>
       )}
     </>
   );
